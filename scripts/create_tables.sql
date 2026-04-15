@@ -112,3 +112,12 @@ CREATE TABLE Problem_Data (
         FOREIGN KEY (planting_id) 
         REFERENCES Growth(planting_id)
 );
+
+-- Alter tables for data integrity
+ALTER TABLE Harvest_Data 
+ADD CONSTRAINT check_germination 
+CHECK (germination_percent BETWEEN 0 AND 100);
+
+ALTER TABLE Seeds 
+ADD CONSTRAINT check_lifecycle 
+CHECK (life_cycle IN ('annual', 'perennial', 'biennial'));
