@@ -17,3 +17,14 @@ The project will provide the ability to search and filter for seeds based on inf
 -----------------------------------------------------------------------------
 
 *This project was reverse-engineered from original database schema screenshots (see /images folder) to demonstrate SQL reconstruction and data modeling skills*
+
+-----------------------------------------------------------------------------
+
+## How to Run
+1. Open your Oracle SQL Developer or APEX environment.
+2. Run the scripts in the following order to handle dependencies:
+  /scripts/create_tables.sql
+  /scripts/insert_data.sql
+  /scripts/views.sql
+  /scripts/performance.sql
+3. Run queries from /scripts/sample_queries.sql or write your own to see that database work
