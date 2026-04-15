@@ -50,7 +50,7 @@
  | seed_id | NUMBER | FK | Reference to the Seeds table | 
  | location_name | VARCHAR2(30) | - | Physical spot (e.g., 'Basement Fridge', 'Tool Shed') | 
  | estimated_expiration | DATE | - | Calculated or stated date when viability drops | 
- | acquisition_date | DATE | - | Date the seeds entered storage | 
+ | seed_acquisition_date | DATE | - | Date the seeds entered storage | 
 
 # Table: Growth
 ## Description: The primary log for planting activities and success rates
